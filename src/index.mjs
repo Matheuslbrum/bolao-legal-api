@@ -5,9 +5,7 @@ import routes from './routes/routes.mjs'
 
 const app = express();
 app.use(
-  cors({
-    origin,
-  })
+  cors()
   )
 app.use(bodyParser.json());
 app.use(routes)
