@@ -1,23 +1,23 @@
-import userQuery from 'queries'
+import {userQuery} from '../queries/useQuery.mjs'
 
 export const userController = {
-  async getAllUsers(req, res) {
+  getAllUsers(req, res) {
     try {
-      const users = await userQuery.getAllUsers();
+      const users = userQuery.getAllUsers();
 
-      return res.send(200).json(users)
+      return res
     } catch (error) {
-      res.send(500).json(error)
+      return error;
     }
   },
-  async createUser(req, res) {
+  createUser(req, res) {
     try {
       const userData = req.body;
       const newUser = userQuery.createUser();
     } catch (error) {
     }
   },
-  async createAdmInformation(req, res) {
+  createAdmInformation(req, res) {
     try {
       const AdmData = req.body;
       const newAdm = userQuery.createAdmInformations();

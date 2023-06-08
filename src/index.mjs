@@ -1,8 +1,7 @@
-import './utils/module-alias'
-import { express } from "express";
+import express  from "express";
 import bodyParser from "body-parser";
 import cors from 'cors';
-import routes from '@src/routes'
+import routes from './routes/routes.mjs'
 
 const app = express();
 app.use(
