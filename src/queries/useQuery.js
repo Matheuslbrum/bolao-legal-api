@@ -16,7 +16,7 @@ export const userQuery = {
     return result;
     } catch (error) {
       console.error('Erro ao executar a consulta: ', error);
-      throw error;      
+      //throw error;      
     }
   },
   async createUser(userData){
