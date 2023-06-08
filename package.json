@@ -1,0 +1,37 @@
+{
+  "name": "bolao-amizade-api",
+  "version": "1.0.0",
+  "description": "Javascript node.js API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "style:check": "prettier --check src/**/*.js",
+    "style:fix": "prettier --write 'src/**/*.js'"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "api"
+  ],
+  "author": "Matheus Brum",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/node": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "node-schedule": "^2.1.1",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "module-alias": "^2.2.3",
+    "mysql2": "^3.3.3"
+  }
+}
