@@ -5,9 +5,12 @@ import routes from './routes/routes.mjs'
 
 const app = express();
 app.use(
-  cors()
+  cors({
+    origin: '*',
+
+  })
   )
 app.use(bodyParser.json());
 app.use(routes)
 
-app.listen(3000 || 8888);
+app.listen(8888);
