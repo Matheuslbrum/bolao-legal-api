@@ -6,7 +6,7 @@ import routes from './routes/routes.mjs'
 const app = express();
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*")
-  res.header("Access-Control-Allow-Origin", "GET,POST,DELETE, PUT")
+  res.header("Access-Control-Allow-Methods", "GET,POST,DELETE, PUT")
   app.use(cors());
   next();
 })
