@@ -4,12 +4,7 @@ import cors from 'cors';
 import routes from './routes/routes.mjs'
 
 const app = express();
-app.use(
-  cors({
-    origin: '*',
-
-  })
-  )
+app.use(cors())
 app.use(bodyParser.json());
 app.use(routes)
 
